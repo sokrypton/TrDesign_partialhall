@@ -1,6 +1,20 @@
 # TrDesign_partialhall
 TrDesign w/ Partial Hallucination support
 
+Download Models
+```
+wget -qnc https://files.ipd.uw.edu/krypton/TrRosetta/models.zip
+wget -qnc https://files.ipd.uw.edu/krypton/TrRosetta/bkgr_models.zip
+unzip -qqo models.zip
+unzip -qqo bkgr_models.zip
+```
+IMPORTANT: Modify `DB_DIR` in `utils.py`, set path to models
+
+Run example
+```
+python design.py -p 1QYS.pdb -o tmp.txt
+```
+HELP
 ```
 -------------------------------------------------------------------------------------
 TrRosetta for Design
